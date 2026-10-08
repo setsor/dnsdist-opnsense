@@ -9,6 +9,16 @@ The current package is based on **dnsdist 2.1.2** from the FreeBSD port `dns/dns
 >
 > The dnsdist binary is not presented as a custom PowerDNS build. The package manifest records the repack as using the **original dnsdist 2.1.2 binary**, with compatibility changes limited to package metadata and package lifecycle behavior described below.
 
+## Current release
+
+**[v2.1.2-opnsense-freebsd15-amd64](https://github.com/setsor/dnsdist-opnsense/releases/tag/v2.1.2-opnsense-freebsd15-amd64)**
+
+Release assets:
+
+- `dnsdist-2.1.2-opnsense-freebsd15-amd64.pkg`
+- `manifest.json`
+- `SHA256SUMS`
+
 ## Current package
 
 | Item | Value |
@@ -64,9 +74,9 @@ The package links against, among others, OpenSSL 3.5 (`libssl.so.35` / `libcrypt
 - [REPACK.md](REPACK.md) — what was changed and what was deliberately not changed
 - [SOURCE-PROVENANCE.md](SOURCE-PROVENANCE.md) — package, port and build provenance
 
-## Release asset
+## Package checksum
 
-The GitHub Release will publish the package with a descriptive asset name:
+The package asset is:
 
 `dnsdist-2.1.2-opnsense-freebsd15-amd64.pkg`
 
@@ -74,11 +84,13 @@ The internal FreeBSD package identity remains:
 
 `dnsdist-2.1.2`
 
-Expected SHA256:
+SHA256:
 
 ```text
 09955ca8409146b1f440365ec43c6434b4802a02d321ec9ec37f65172b6d20a2
 ```
+
+GitHub independently reports the same SHA256 digest for the published release asset.
 
 Always verify the checksum before installation.
 
