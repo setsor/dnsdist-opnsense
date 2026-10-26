@@ -6,7 +6,7 @@
 
 This is an independent build from the signed upstream dnsdist **2.1.3 source**, not a repack of the FreeBSD 2.1.2 binary. The previous 2.1.2 repack remains available for rollback.
 
-**Release publishing status:** The package exists on the firewall; a GitHub Release asset has **not yet** been uploaded or published. Do not claim otherwise.
+**Release publishing status:** Published on GitHub: [v2.1.3-opnsense-freebsd15-amd64](https://github.com/setsor/dnsdist-opnsense/releases/tag/v2.1.3-opnsense-freebsd15-amd64). The uploaded package SHA256 was independently confirmed from GitHub release asset metadata and matches the locally recorded SHA256.
 
 ## Provenance
 
@@ -110,7 +110,7 @@ Package SHA256:
 
 `44ff2addaa44dfbe094628e7a3c16eb75991b88f136b34834c29e4902dae11c2`
 
-Treat this digest as applying to **this exact local build**, not as an upstream PowerDNS checksum. Publish the binary and checksum together.
+Treat this digest as applying to **this exact local build**, not as an upstream PowerDNS checksum. The binary and checksum have been published together as GitHub release assets.
 
 ## Upgrade and rollback used
 
