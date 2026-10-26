@@ -1,4 +1,4 @@
-# Source and build provenance
+# dnsdist 2.1.2 — Source and build provenance
 
 This file records the provenance embedded in the dnsdist 2.1.2 package manifest.
 
