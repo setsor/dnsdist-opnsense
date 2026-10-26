@@ -2,20 +2,20 @@
 
 This repository documents and publishes **unofficial dnsdist builds and compatibility repacks for OPNsense / FreeBSD 15 amd64**.
 
-The currently published release is a **dnsdist 2.1.2 compatibility repack** from the FreeBSD port `dns/dnsdist`. A separately compiled **dnsdist 2.1.3** package has been validated on OPNsense and is awaiting GitHub Release publication.
+The currently published release is a **dnsdist 2.1.2 compatibility repack** from the FreeBSD port `dns/dnsdist`. A separately compiled **dnsdist 2.1.3** package has been validated on OPNsense and published as a GitHub Release.
 
 > [!IMPORTANT]
 > This repository is not affiliated with, endorsed by, or an official distribution channel for PowerDNS or OPNsense.
 >
 > Version **2.1.2** retains the original FreeBSD executable with package-metadata compatibility changes. Version **2.1.3** is an independently compiled source build; its documented provenance and testing differ from the 2.1.2 repack.
 
-## dnsdist 2.1.3 — validated build (not yet published)
+## Latest release — dnsdist 2.1.3
 
 The local package was successfully installed and validated on OPNsense / FreeBSD 15.1 amd64 on 2026-10-26. It preserves the system OpenSSL ABI 35, enables YAML, DNSCrypt, DoT, DoH, DoQ, DoH3, fstrm and other features, and passed configuration, listener, basic DNS resolution and package dependency checks. Full encrypted-protocol testing has **not** been completed.
 
 Build procedure and exact package checksum: [BUILD-2.1.3.md](BUILD-2.1.3.md).
 
-The 2.1.3 binary exists only on the build host at this stage; do not advertise it as a published GitHub release or use the current 2.1.2 release asset as its substitute.
+Download the published [dnsdist 2.1.3 package, manifest and checksums](https://github.com/setsor/dnsdist-opnsense/releases/tag/v2.1.3-opnsense-freebsd15-amd64). Its package SHA256 is `44ff2addaa44dfbe094628e7a3c16eb75991b88f136b34834c29e4902dae11c2`. Verify downloads before installation. See also [release notes](RELEASE-NOTES-2.1.3.md).
 
 ## Current published release (2.1.2)
 
