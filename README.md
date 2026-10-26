@@ -2,7 +2,7 @@
 
 This repository documents and publishes **unofficial dnsdist builds and compatibility repacks for OPNsense / FreeBSD 15 amd64**.
 
-The currently published release is a **dnsdist 2.1.2 compatibility repack** from the FreeBSD port `dns/dnsdist`. A separately compiled **dnsdist 2.1.3** package has been validated on OPNsense and published as a GitHub Release.
+The latest published release is **dnsdist 2.1.3**, independently compiled for OPNsense / FreeBSD 15.1 amd64. The previous **dnsdist 2.1.2** release remains available as a compatibility repack from the FreeBSD port `dns/dnsdist`.
 
 > [!IMPORTANT]
 > This repository is not affiliated with, endorsed by, or an official distribution channel for PowerDNS or OPNsense.
