@@ -1,15 +1,23 @@
 # dnsdist for OPNsense / FreeBSD 15
 
-This repository publishes **unofficial compatibility repacks of dnsdist for OPNsense / FreeBSD 15 amd64**.
+This repository documents and publishes **unofficial dnsdist builds and compatibility repacks for OPNsense / FreeBSD 15 amd64**.
 
-The current package is based on **dnsdist 2.1.2** from the FreeBSD port `dns/dnsdist`. The package manifest records the target ABI as `FreeBSD:15:amd64` / `freebsd:15:x86:64`.
+The currently published release is a **dnsdist 2.1.2 compatibility repack** from the FreeBSD port `dns/dnsdist`. A separately compiled **dnsdist 2.1.3** package has been validated on OPNsense and is awaiting GitHub Release publication.
 
 > [!IMPORTANT]
 > This repository is not affiliated with, endorsed by, or an official distribution channel for PowerDNS or OPNsense.
 >
-> The dnsdist binary is not presented as a custom PowerDNS build. The package manifest records the repack as using the **original dnsdist 2.1.2 binary**, with compatibility changes limited to package metadata and package lifecycle behavior described below.
+> Version **2.1.2** retains the original FreeBSD executable with package-metadata compatibility changes. Version **2.1.3** is an independently compiled source build; its documented provenance and testing differ from the 2.1.2 repack.
 
-## Current release
+## dnsdist 2.1.3 — validated build (not yet published)
+
+The local package was successfully installed and validated on OPNsense / FreeBSD 15.1 amd64 on 2026-10-26. It preserves the system OpenSSL ABI 35, enables YAML, DNSCrypt, DoT, DoH, DoQ, DoH3, fstrm and other features, and passed configuration, listener, basic DNS resolution and package dependency checks. Full encrypted-protocol testing has **not** been completed.
+
+Build procedure and exact package checksum: [BUILD-2.1.3.md](BUILD-2.1.3.md).
+
+The 2.1.3 binary exists only on the build host at this stage; do not advertise it as a published GitHub release or use the current 2.1.2 release asset as its substitute.
+
+## Current published release (2.1.2)
 
 **[v2.1.2-opnsense-freebsd15-amd64](https://github.com/setsor/dnsdist-opnsense/releases/tag/v2.1.2-opnsense-freebsd15-amd64)**
 
@@ -19,7 +27,7 @@ Release assets:
 - `manifest.json`
 - `SHA256SUMS`
 
-## Current package
+## Published 2.1.2 package
 
 | Item | Value |
 | --- | --- |
