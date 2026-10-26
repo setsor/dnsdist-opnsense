@@ -47,7 +47,7 @@ Revalidate local name resolution and the actual deployment listeners after resta
 
 ## Documentation and rollback
 
-See [BUILD-2.1.3.md](BUILD-2.1.3.md) for source provenance, build procedure, exact OpenSSL relink method, package metadata, test scope and rollback notes.
+See [BUILD-2.1.3.md](https://github.com/setsor/dnsdist-opnsense/blob/dnsdist-2.1.3/BUILD-2.1.3.md) for source provenance, build procedure, exact OpenSSL relink method, package metadata, test scope and rollback notes.
 
 The previous published [dnsdist 2.1.2 release](https://github.com/setsor/dnsdist-opnsense/releases/tag/v2.1.2-opnsense-freebsd15-amd64) remains available for rollback with an independent configuration backup.
 
