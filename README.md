@@ -47,6 +47,6 @@ Historical documentation:
 - dnsdist documentation: [dnsdist.org](https://dnsdist.org/)
 - FreeBSD package origin: `dns/dnsdist`
 
-The **2.1.3 release tag** was created before the publication-status text was updated, so its historical README/BUILD snapshot can still say that the release is pending. The release assets are published and their package SHA256 has been verified against GitHub's asset digest. Consult this `main` branch for the corrected current documentation. Published tag history has not been rewritten.
+The latest release assets are published, and the package SHA256 was verified against GitHub's asset digest.
 
 Keep live `dnsdist.conf`, private network details, secrets and certificates out of GitHub.
