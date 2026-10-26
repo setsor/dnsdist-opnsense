@@ -6,7 +6,7 @@ Unofficial, independently compiled dnsdist 2.1.3 package for OPNsense / FreeBSD 
 
 - Built locally from the upstream dnsdist 2.1.3 source tarball, with a valid detached GPG signature.
 - Compiled with Lua 5.4, YAML support (Rust), DNSCrypt, DNS-over-TLS, DNS-over-HTTPS, DNS-over-QUIC, DNS-over-HTTP/3, GnuTLS, OpenSSL, IPCipher, IPCrypt2, LMDB, RE2, CDB, Protobuf and fstrm/DNSTAP.
-- Statically selected the OPNsense base OpenSSL 3.5 ABI libraries `libssl.so.35` and `libcrypto.so.35` at link time, rather than the ports OpenSSL ABI.
+- Explicitly linked to the OPNsense base OpenSSL 3.5 ABI libraries `libssl.so.35` and `libcrypto.so.35` at link time, rather than the ports OpenSSL ABI; these are dynamic shared libraries, not static linking.
 - Stripped executables, FreeBSD `pkg` manifest with 11 package dependencies, and preserved `_dnsdist` service user and Lua configuration lifecycle.
 - Built on OPNsense / FreeBSD 15.1-RELEASE-p4, amd64.
 - Not an official PowerDNS or OPNsense release.
@@ -47,7 +47,7 @@ Revalidate local name resolution and the actual deployment listeners after resta
 
 ## Documentation and rollback
 
-See [BUILD-2.1.3.md](https://github.com/setsor/dnsdist-opnsense/blob/dnsdist-2.1.3/BUILD-2.1.3.md) for source provenance, build procedure, exact OpenSSL relink method, package metadata, test scope and rollback notes.
+See [BUILD-2.1.3.md](https://github.com/setsor/dnsdist-opnsense/blob/main/BUILD-2.1.3.md) for source provenance, build procedure, exact OpenSSL relink method, package metadata, test scope and rollback notes.
 
 The previous published [dnsdist 2.1.2 release](https://github.com/setsor/dnsdist-opnsense/releases/tag/v2.1.2-opnsense-freebsd15-amd64) remains available for rollback with an independent configuration backup.
 
