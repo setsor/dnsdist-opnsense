@@ -27,6 +27,16 @@ The release includes the package, `manifest.json` and `SHA256SUMS`. Verify the d
 - [Build and package provenance, OpenSSL fix and validation](BUILD-2.1.3.md)
 - [Release notes](RELEASE-NOTES-2.1.3.md)
 
+## November 2026 Poudriere rebuild and production migration
+
+On **2026-11-18**, dnsdist **2.1.3** was rebuilt in an isolated FreeBSD 15.1 Poudriere environment and deployed on OPNsense, replacing the October local build without changing the upstream dnsdist version. The new package uses **LMDB0 0.9.36_1**, **Quiche 0.24.5_10**, **libnghttp2 1.71.0**, and FreeBSD base **OpenSSL ABI 35**.
+
+The new local dnsdist package SHA256 is `76ae940d3cdb14c4fa135346bdd7b1753b3ce2df8281c5d8d2ecb6dbe7350249`. The package and related dependencies were installed through a temporary local pkg repository. Post-install checks confirmed configuration validity, library resolution, DNS over UDP/TCP and successful LAN/VLAN resolution. Management-console authentication and comprehensive encrypted protocol testing remain separate matters.
+
+**[Read the Poudriere build, dependency migration, validation, and rollback record](POUDRIERE-MIGRATION-2026-11.md).**
+
+**Important:** the existing GitHub release linked above still contains the **October** package (SHA256 `44ff2addaa44dfbe094628e7a3c16eb75991b88f136b34834c29e4902dae11c2`). The **November package is documented but has not been published as a new GitHub release asset**; do not substitute the November checksum for the October asset.
+
 ## Previous release — dnsdist 2.1.2
 
 **[dnsdist 2.1.2 OPNsense compatibility repack](https://github.com/setsor/dnsdist-opnsense/releases/tag/v2.1.2-opnsense-freebsd15-amd64)**
